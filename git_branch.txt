@@ -1,0 +1,4 @@
+키워드 : git 분기 명명법
+
+- git branch 관리법
+https://gmlwjd9405.github.io/2018/05/11/types-of-git-branch.html
