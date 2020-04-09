@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.btn_DgvSample = new System.Windows.Forms.Button();
+            this.btn_SimpleEncryption = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btn_DgvSample
@@ -41,11 +42,22 @@
             this.btn_DgvSample.UseVisualStyleBackColor = true;
             this.btn_DgvSample.Click += new System.EventHandler(this.btn_DgvSample_Click);
             // 
+            // btn_SimpleEncryption
+            // 
+            this.btn_SimpleEncryption.Location = new System.Drawing.Point(12, 43);
+            this.btn_SimpleEncryption.Name = "btn_SimpleEncryption";
+            this.btn_SimpleEncryption.Size = new System.Drawing.Size(156, 25);
+            this.btn_SimpleEncryption.TabIndex = 1;
+            this.btn_SimpleEncryption.Text = "Simple Encryption";
+            this.btn_SimpleEncryption.UseVisualStyleBackColor = true;
+            this.btn_SimpleEncryption.Click += new System.EventHandler(this.btn_SimpleEncryption_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btn_SimpleEncryption);
             this.Controls.Add(this.btn_DgvSample);
             this.Name = "Form1";
             this.Text = "Form1";
@@ -56,6 +68,7 @@
         #endregion
 
         private System.Windows.Forms.Button btn_DgvSample;
+        private System.Windows.Forms.Button btn_SimpleEncryption;
     }
 }
 
