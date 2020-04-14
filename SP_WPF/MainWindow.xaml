@@ -1,0 +1,34 @@
+﻿<Window x:Class="SP_WPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SP_WPF"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="150"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <ContentControl x:Name="cc_Sub_Content" 
+                        Grid.Column="1" Grid.Row="1" Grid.RowSpan="2"/>
+
+        <TreeView x:Name="tv_Main_CategoryList"
+                  Grid.Column="0" Grid.Row="1" Margin="3">
+            
+        </TreeView>
+
+        <Grid Grid.Column="0" Grid.Row="2" Margin="3">
+            <ListBox x:Name="lb_Sub_CategoryList">
+                
+            </ListBox>
+        </Grid>
+    </Grid>
+</Window>
