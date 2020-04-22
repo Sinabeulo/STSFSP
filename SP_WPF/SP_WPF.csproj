@@ -51,9 +51,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="FFmpeg.AutoGen, Version=4.2.2.1, Culture=neutral, PublicKeyToken=9b7632533a381715, processorArchitecture=MSIL">
-      <HintPath>..\packages\FFmpeg.AutoGen.4.2.2.1\lib\net45\FFmpeg.AutoGen.dll</HintPath>
-    </Reference>
     <Reference Include="Microsoft.Expression.Encoder, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=x86">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>.\Microsoft.Expression.Encoder.dll</HintPath>
@@ -79,13 +76,6 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="FFmpeg\Decoder\VideoFrameConverter.cs" />
-    <Compile Include="FFmpeg\Decoder\VideoStreamDecoder.cs" />
-    <Compile Include="FFmpeg\FFmpegBinariesHelper.cs" />
-    <Compile Include="FFmpeg\FFmpegHelper.cs" />
-    <Compile Include="Uc_Media\WebCamReader.xaml.cs">
-      <DependentUpon>WebCamReader.xaml</DependentUpon>
-    </Compile>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -98,10 +88,6 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Page Include="Uc_Media\WebCamReader.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs">
@@ -121,7 +107,6 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -147,17 +132,6 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="FFmpeg\Plugins\avcodec-58.dll" />
-    <Content Include="FFmpeg\Plugins\avdevice-58.dll" />
-    <Content Include="FFmpeg\Plugins\avfilter-7.dll" />
-    <Content Include="FFmpeg\Plugins\avformat-58.dll" />
-    <Content Include="FFmpeg\Plugins\avutil-56.dll" />
-    <Content Include="FFmpeg\Plugins\postproc-55.dll" />
-    <Content Include="FFmpeg\Plugins\swresample-3.dll" />
-    <Content Include="FFmpeg\Plugins\swscale-5.dll" />
-    <Resource Include="FFmpeg\Reference.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

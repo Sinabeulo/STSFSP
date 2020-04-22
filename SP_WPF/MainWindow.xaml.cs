@@ -1,5 +1,4 @@
-﻿using SP_WPF.Uc_Media;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -44,12 +43,12 @@ namespace SP_WPF
         private void Tv_Main_CategoryList_SelectedItemChanged(object sender, RoutedPropertyChangedEventArgs<object> e)
         {
             //.....
-            switch (((TreeViewItem)tv_Main_CategoryList.SelectedItem).Name)
-            {
-                case nameof(WebCamReader):
-                    cc_Sub_Content.Content = new WebCamReader();
-                    break;
-            }
+            //switch (((TreeViewItem)tv_Main_CategoryList.SelectedItem).Name)
+            //{
+            //    case nameof(WebCamReader):
+            //        cc_Sub_Content.Content = new WebCamReader();
+            //        break;
+            //}
             
         }
     }
